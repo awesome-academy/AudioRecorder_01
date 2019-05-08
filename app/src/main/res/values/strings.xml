@@ -1,6 +1,21 @@
 <resources>
-    <string name="app_name">AudioRecorder_01</string>
+    <string name="app_name">AudioRecorder</string>
     <string name="hello">Hello World!</string>
+    <string name="l">List Audio Recorder</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="audio_recorver">Audio Recorver</string>
+    <string name="text_color_blue">Blue</string>
+    <string name="red">Red</string>
+    <string name="text_colorblack">Black</string>
+    <array name="ItemSpinnerOption">
+        <item>Change Language</item>
+        <item>Change Background</item>
+    </array>
+    <array name="Backgroud">
+        <item>Bluew</item>
+        <item>Red</item>
+        <item>Black</item>
+    </array>
 </resources>
 

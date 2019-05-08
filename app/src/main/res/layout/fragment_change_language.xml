@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.ChangeLanguage">
+
+    <RadioGroup
+        android:background="@color/colorBlack"
+        android:id="@+id/radioGroup"
+        android:layout_width="411dp"
+        android:layout_height="104dp"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:layout_marginBottom="@dimen/marginbottom_1"
+            android:background="@color/colorWhite"
+            android:id="@+id/radio_tiengviet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_51"
+            android:text="Tiếng việt" />
+
+        <RadioButton
+            android:background="@color/colorWhite"
+            android:id="@+id/radio_english"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_51"
+            android:text="English" />
+    </RadioGroup>
+
+    <Button
+        android:background="@color/colorWhite"
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:background="@color/colorWhite"
+        android:id="@+id/button_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="8dp"
+        android:text="Confim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+</android.support.constraint.ConstraintLayout>
