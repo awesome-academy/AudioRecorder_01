@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 import com.sun.audiorecorder_01.R;
 
-public class MainActivity extends AppCompatActivity implements HomeFragment.OpenListAudioRecorverFragmentCallback{
+public class MainActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,15 +16,6 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Open
         OpenHomeFragmentCallback();
     }
 
-    @Override
-    public void OpenListAudioRecorverFragmentCallback() {
-        ListAudioRecorverFragment listAudioRecorverFragment = new ListAudioRecorverFragment();
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.frag_main, listAudioRecorverFragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }
     public void OpenHomeFragmentCallback() {
         HomeFragment homeFragment = new HomeFragment();
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -33,4 +24,6 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.Open
         transaction.addToBackStack(null);
         transaction.commit();
     }
+
 }
+
