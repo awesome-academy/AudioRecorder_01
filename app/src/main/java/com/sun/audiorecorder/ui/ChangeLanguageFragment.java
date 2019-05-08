@@ -18,13 +18,11 @@ import com.sun.audiorecorder_01.R;
  * A simple {@link Fragment} subclass.
  */
 public class ChangeLanguageFragment extends Fragment {
-    private RadioButton mradio_tiengviet,mradio_english;
-    private Button mbutton_confirm,mbutton_cancel;
+    private RadioButton mradio_tiengviet, mradio_english;
+    private Button mbutton_confirm, mbutton_cancel;
 
     public ChangeLanguageFragment() {
-        // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,19 +34,14 @@ public class ChangeLanguageFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         initView();
-        initClickListeners();
         super.onViewCreated(view, savedInstanceState);
     }
 
-    private void initClickListeners() {
-
-    }
-
     private void initView() {
-        mradio_tiengviet=getView().findViewById(R.id.radio_tiengviet);
-        mradio_tiengviet=getView().findViewById(R.id.radio_tiengviet);
-        mbutton_confirm=getView().findViewById(R.id.button_confirm);
-        mbutton_cancel=getView().findViewById(R.id.button_cancel);
+        mradio_tiengviet = getView().findViewById(R.id.radio_tiengviet);
+        mradio_tiengviet = getView().findViewById(R.id.radio_tiengviet);
+        mbutton_confirm = getView().findViewById(R.id.button_confirm);
+        mbutton_cancel = getView().findViewById(R.id.button_cancel);
     }
-}
 
+}

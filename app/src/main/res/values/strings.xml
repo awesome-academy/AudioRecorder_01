@@ -8,6 +8,7 @@
     <string name="text_color_blue">Blue</string>
     <string name="red">Red</string>
     <string name="text_colorblack">Black</string>
+    <string name="time">00:00:00</string>
     <array name="ItemSpinnerOption">
         <item>Change Language</item>
         <item>Change Background</item>

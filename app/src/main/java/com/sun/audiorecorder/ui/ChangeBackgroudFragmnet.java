@@ -12,7 +12,7 @@ import android.widget.RadioButton;
 
 import com.sun.audiorecorder_01.R;
 
-public class ChangeBackgroudFragmnet extends Fragment implements View.OnClickListener {
+public class ChangeBackgroudFragmnet extends Fragment {
     private RadioButton mRadioButtonRadio_color_Black, mRadioButtonRadio_color_blue, mRadioButtonRadio_color_Red;
     private Button mButtonConfirm, mButtonCancel;
 
@@ -25,32 +25,14 @@ public class ChangeBackgroudFragmnet extends Fragment implements View.OnClickLis
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         initView();
-        initClickListeners();
         super.onViewCreated(view, savedInstanceState);
     }
 
-    private void initClickListeners() {
-        mButtonConfirm.setOnClickListener(this);
-        mButtonCancel.setOnClickListener(this);
-    }
-
     private void initView() {
-        mRadioButtonRadio_color_Black=getView().findViewById(R.id.radio_color_Black);
-        mRadioButtonRadio_color_blue=getView().findViewById(R.id.radio_color_blue);
-        mRadioButtonRadio_color_Red=getView().findViewById(R.id.radio_color_red);
+        mRadioButtonRadio_color_Black = getView().findViewById(R.id.radio_color_Black);
+        mRadioButtonRadio_color_blue = getView().findViewById(R.id.radio_color_blue);
+        mRadioButtonRadio_color_Red = getView().findViewById(R.id.radio_color_red);
         mButtonConfirm = getView().findViewById(R.id.button_confirm);
         mButtonCancel = getView().findViewById(R.id.button_cancel);
     }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.button_confirm:
-                break;
-            case R.id.button_cancel:
-                break;
-        }
-    }
 }
-
-

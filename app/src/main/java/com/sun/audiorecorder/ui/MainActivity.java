@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 import com.sun.audiorecorder_01.R;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,4 @@ public class MainActivity extends AppCompatActivity{
         transaction.addToBackStack(null);
         transaction.commit();
     }
-
 }
-

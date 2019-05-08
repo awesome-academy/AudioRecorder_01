@@ -32,4 +32,9 @@
     <dimen name="margintop_48">48dp</dimen>
     <dimen name="marginend_40">40dp</dimen>
     <dimen name="marginstart_40">40dp</dimen>
+    <dimen name="margintop_60">60dp</dimen>
+    <dimen name="marginEnd_8">8dp</dimen>
+    <dimen name="marginend_48">48dp</dimen>
+    <dimen name="height_104">104dp</dimen>
 </resources>
+

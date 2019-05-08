@@ -9,8 +9,8 @@
     <RadioGroup
         android:background="@color/colorBlack"
         android:id="@+id/radioGroup"
-        android:layout_width="411dp"
-        android:layout_height="104dp"
+        android:layout_width="@dimen/width_411"
+        android:layout_height="@dimen/height_104"
         tools:ignore="MissingConstraints">
 
         <RadioButton
@@ -34,9 +34,9 @@
         android:id="@+id/button_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginStart="@dimen/marginStart_8"
+        android:layout_marginTop="@dimen/marrgin_top_8"
+        android:layout_marginEnd="@dimen/marrginend_52"
         android:text="Cancel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -48,8 +48,8 @@
         android:id="@+id/button_confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/marrginstart_84"
+        android:layout_marginTop="@dimen/marrgin_top_8"
         android:text="Confim"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />

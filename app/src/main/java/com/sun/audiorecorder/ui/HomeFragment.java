@@ -2,8 +2,6 @@ package com.sun.audiorecorder.ui;
 
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
@@ -12,7 +10,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 
 import com.sun.audiorecorder_01.R;
 
@@ -22,27 +19,12 @@ import com.sun.audiorecorder_01.R;
  */
 public class HomeFragment extends Fragment {
     private AlertDialog.Builder mbuilder;
-    private static HomeFragment sInstance;
-
-    public static synchronized HomeFragment getInstance() {
-        if (sInstance == null) {
-            sInstance = new HomeFragment();
-        }
-        return sInstance;
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
-    }
-
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        setHasOptionsMenu(true);
     }
 
     @Override
@@ -54,16 +36,16 @@ public class HomeFragment extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.item_Change_Language:
-                openDiaLogChangeLanguage();
+                OpenDiaLogChangeLanguage();
                 break;
             case R.id.item_Change_Background:
-                openDiaLogChangeBackground();
+                OpenDiaLogChangeBackground();
                 break;
         }
         return super.onOptionsItemSelected(item);
     }
 
-    private void openDiaLogChangeBackground() {
+    private void OpenDiaLogChangeBackground() {
         mbuilder = new AlertDialog.Builder(getActivity());
         View view = getLayoutInflater().inflate(R.layout.fragment_change_backgroud, null);
         mbuilder.setView(view);
@@ -71,7 +53,7 @@ public class HomeFragment extends Fragment {
         mbuilder.show();
     }
 
-    private void openDiaLogChangeLanguage() {
+    private void OpenDiaLogChangeLanguage() {
         mbuilder = new AlertDialog.Builder(getActivity());
         View view = getLayoutInflater().inflate(R.layout.fragment_change_language, null);
         mbuilder.setView(view);
@@ -80,4 +62,3 @@ public class HomeFragment extends Fragment {
     }
 
 }
-
