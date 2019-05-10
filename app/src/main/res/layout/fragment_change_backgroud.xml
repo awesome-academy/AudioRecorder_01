@@ -7,34 +7,31 @@
     tools:context=".ui.ChangeBackgroud">
 
     <RadioGroup
-        android:background="@color/colorBlack"
-        android:id="@+id/radioGroup"
-        android:layout_width="@dimen/width_411"
-        android:layout_height="@dimen/height_156"
+        android:id="@+id/radio_group"
+        android:layout_width="@dimen/dp_411"
+        android:layout_height="@dimen/dp_156"
         tools:ignore="MissingConstraints">
 
         <RadioButton
             android:background="@color/colorWhite"
-            android:id="@+id/radio_color_Black"
+            android:id="@+id/radio_color_black"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/height_51"
-            android:layout_marginBottom="@dimen/marginbottom_1"
-            android:text="Color Black" />
+            android:layout_height="@dimen/dp_51"
+            android:text="@string/text_color_black" />
 
         <RadioButton
             android:background="@color/colorWhite"
             android:id="@+id/radio_color_red"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/height_51"
-            android:text="Color red" />
+            android:layout_height="@dimen/dp_51"
+            android:text="@string/text_color_red" />
 
         <RadioButton
             android:id="@+id/radio_color_blue"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/height_51"
-            android:layout_marginTop="@dimen/margintop_1"
+            android:layout_height="@dimen/dp_51"
             android:background="@color/colorWhite"
-            android:text="Color blue" />
+            android:text="@string/text_color_blue" />
 
     </RadioGroup>
 
@@ -42,25 +39,26 @@
         android:id="@+id/button_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marginStart_8"
-        android:layout_marginTop="@dimen/marrgin_top_8"
-        android:layout_marginEnd="@dimen/marrginend_52"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_51"
         android:background="@color/colorWhite"
-        android:text="Cancel"
+        android:text="@string/text_cancel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/button_confirm"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/radio_group" />
 
     <Button
         android:id="@+id/button_confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marrginstart_84"
-        android:layout_marginTop="@dimen/marrgin_top_8"
+        android:layout_marginStart="@dimen/dp_84"
+        android:layout_marginTop="@dimen/dp_8"
         android:background="@color/colorWhite"
-        android:text="Confim"
+        android:text="@string/text_confim"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/radio_group" />
 
 </android.support.constraint.ConstraintLayout>
+

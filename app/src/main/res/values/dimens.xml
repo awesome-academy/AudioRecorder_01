@@ -1,40 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="height_65">65dp</dimen>
-    <dimen name="width_350">350dp</dimen>
-    <dimen name="height_28">28dp</dimen>
-    <dimen name="textsize_20">20sp</dimen>
-    <dimen name="width_28">28dp</dimen>
-    <dimen name="with_410">410dp</dimen>
-    <dimen name="width_322">322dp</dimen>
-    <dimen name="marginStart_8">8dp</dimen>
-    <dimen name="margintop_16">16dp</dimen>
-    <dimen name="textsize_30">30sp</dimen>
-    <dimen name="height_54">54dp</dimen>
-    <dimen name="width_411">411dp</dimen>
-    <dimen name="height_156">156dp</dimen>
-    <dimen name="marrgin_top_8">8dp</dimen>
-    <dimen name="marrginend_52">52dp</dimen>
-    <dimen name="marrginstart_84">84dp</dimen>
-    <dimen name="height_51">51dp</dimen>
-    <dimen name="marginbottom_1">1dp</dimen>
-    <dimen name="margintop_1">1dp</dimen>
-    <dimen name="elevation_4">4dp</dimen>
-    <dimen name="height_30">30dp</dimen>
-    <dimen name="width_162">162dp</dimen>
-    <dimen name="height_188">188dp</dimen>
-    <dimen name="margin_end_112">112dp</dimen>
-    <dimen name="height_50">50dp</dimen>
-    <dimen name="marginend_8">8dp</dimen>
-    <dimen name="textsize_40">40sp</dimen>
-    <dimen name="width_62">62dp</dimen>
-    <dimen name="height_62">62dp</dimen>
-    <dimen name="margintop_48">48dp</dimen>
-    <dimen name="marginend_40">40dp</dimen>
-    <dimen name="marginstart_40">40dp</dimen>
-    <dimen name="margintop_60">60dp</dimen>
-    <dimen name="marginEnd_8">8dp</dimen>
-    <dimen name="marginend_48">48dp</dimen>
-    <dimen name="height_104">104dp</dimen>
+    <dimen name="dp_411">411dp</dimen>
+    <dimen name="dp_156">156dp</dimen>
+    <dimen name="dp_51">51dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_84">84dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_104">104dp</dimen>
 </resources>
 

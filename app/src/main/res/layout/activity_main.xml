@@ -5,7 +5,7 @@
     android:id="@+id/frag_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sun.audiorecorder.ui.MainActivity">
+    tools:context="com.sun.audiorecorder.ui.view.MainActivity">
 
 </android.support.constraint.ConstraintLayout>
 

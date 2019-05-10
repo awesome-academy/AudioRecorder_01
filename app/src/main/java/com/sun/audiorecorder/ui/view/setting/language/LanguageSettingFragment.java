@@ -1,4 +1,5 @@
-package com.sun.audiorecorder.ui;
+package com.sun.audiorecorder.ui.view.setting.language;
+
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,16 +11,26 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
 
+
 import com.sun.audiorecorder_01.R;
 
-public class ChangeBackgroudFragmnet extends Fragment {
-    private RadioButton mRadioButtonRadio_color_Black, mRadioButtonRadio_color_blue, mRadioButtonRadio_color_Red;
-    private Button mButtonConfirm, mButtonCancel;
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class LanguageSettingFragment extends Fragment {
+    private RadioButton mRadioVietnamese;
+    private RadioButton mRadionEglish;
+    private Button mButtonConfirm;
+    private Button mButtonCancel;
+
+    public LanguageSettingFragment() {
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_change_backgroud, container, false);
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_change_language, container, false);
     }
 
     @Override
@@ -29,10 +40,10 @@ public class ChangeBackgroudFragmnet extends Fragment {
     }
 
     private void initView() {
-        mRadioButtonRadio_color_Black = getView().findViewById(R.id.radio_color_Black);
-        mRadioButtonRadio_color_blue = getView().findViewById(R.id.radio_color_blue);
-        mRadioButtonRadio_color_Red = getView().findViewById(R.id.radio_color_red);
+        mRadioVietnamese = getView().findViewById(R.id.radioVietnamese);
+        mRadionEglish = getView().findViewById(R.id.radioEnglish);
         mButtonConfirm = getView().findViewById(R.id.button_confirm);
         mButtonCancel = getView().findViewById(R.id.button_cancel);
     }
+
 }

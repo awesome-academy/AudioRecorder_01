@@ -1,11 +1,13 @@
-package com.sun.audiorecorder.ui;
+package com.sun.audiorecorder.ui.view;
 
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.sun.audiorecorder.ui.view.home.HomeFragment;
 import com.sun.audiorecorder_01.R;
+
 
 public class MainActivity extends AppCompatActivity {
 
