@@ -36,26 +36,18 @@ public class HomeFragment extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menuSettingLanguage:
-                openDiaLogSettingLanguage();
+                openDiaLogSetting(R.layout.fragment_change_language);
                 break;
             case R.id.menuSettingBackground:
-                openDiaLogSettingBackground();
+                openDiaLogSetting(R.layout.fragment_change_backgroud);
                 break;
         }
         return super.onOptionsItemSelected(item);
     }
 
-    private void openDiaLogSettingBackground() {
+    private void openDiaLogSetting(int layoutId) {
         mbuilder = new AlertDialog.Builder(getActivity());
-        View view = getLayoutInflater().inflate(R.layout.fragment_change_backgroud, null);
-        mbuilder.setView(view);
-        mbuilder.create();
-        mbuilder.show();
-    }
-
-    private void openDiaLogSettingLanguage() {
-        mbuilder = new AlertDialog.Builder(getActivity());
-        View view = getLayoutInflater().inflate(R.layout.fragment_change_language, null);
+        View view = getLayoutInflater().inflate(layoutId, null);
         mbuilder.setView(view);
         mbuilder.create();
         mbuilder.show();
