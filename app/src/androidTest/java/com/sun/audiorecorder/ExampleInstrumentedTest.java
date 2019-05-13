@@ -1,4 +1,4 @@
-package com.sun.audiorecorder_01;
+package com.sun.audiorecorder;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
