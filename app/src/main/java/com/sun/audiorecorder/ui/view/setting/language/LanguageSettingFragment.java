@@ -30,7 +30,7 @@ public class LanguageSettingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_change_language, container, false);
+        return inflater.inflate(R.layout.fragment_setting_language, container, false);
     }
 
     @Override
@@ -40,8 +40,8 @@ public class LanguageSettingFragment extends Fragment {
     }
 
     private void initView() {
-        mRadioVietnamese = getView().findViewById(R.id.radioVietnamese);
-        mRadionEglish = getView().findViewById(R.id.radioEnglish);
+        mRadioVietnamese = getView().findViewById(R.id.radio_vietnamese);
+        mRadionEglish = getView().findViewById(R.id.radio_english);
         mButtonConfirm = getView().findViewById(R.id.button_confirm);
         mButtonCancel = getView().findViewById(R.id.button_cancel);
     }

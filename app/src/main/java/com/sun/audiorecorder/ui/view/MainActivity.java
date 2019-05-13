@@ -15,15 +15,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        OpenHomeFragmentCallback();
+        openHomeScreen();
     }
 
-    public void OpenHomeFragmentCallback() {
+    public void openHomeScreen() {
         HomeFragment homeFragment = new HomeFragment();
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.frag_main, homeFragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
+        int fragmentManager = getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.activity_mainActitity, homeFragment)
+                .addToBackStack(null)
+                .commit();
     }
 }

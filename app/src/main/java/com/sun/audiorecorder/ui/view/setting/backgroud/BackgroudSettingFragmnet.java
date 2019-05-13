@@ -22,7 +22,7 @@ public class BackgroudSettingFragmnet extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_change_backgroud, container, false);
+        return inflater.inflate(R.layout.fragment_setting_backgroud, container, false);
     }
 
     @Override
@@ -32,7 +32,7 @@ public class BackgroudSettingFragmnet extends Fragment {
     }
 
     private void initView() {
-        mRadioBlack = getView().findViewById(R.id.radio_color_Black);
+        mRadioBlack = getView().findViewById(R.id.radio_color_black);
         mRadioBlue = getView().findViewById(R.id.radio_color_blue);
         mRadioRed = getView().findViewById(R.id.radio_color_red);
         mButtonConfirm = getView().findViewById(R.id.button_confirm);

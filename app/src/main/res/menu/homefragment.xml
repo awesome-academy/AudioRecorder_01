@@ -2,10 +2,10 @@
 <menu xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:ignore="MissingDefaultResource">
-        <item android:id="@+id/menuSettingBackground"
+        <item android:id="@+id/menu_setting_background"
             android:title="@string/text_change_background"
             />
-        <item android:id="@+id/menuSettingLanguage"
+        <item android:id="@+id/menu_setting_language"
             android:title="@string/text_change_language"
             />
 </menu>
